@@ -10,8 +10,11 @@
 
 <body>
     <section> 
+        <!-- Here we are putting header using the h1 tag-->
         <h1>Please fill out the form</h1>
           <form action="/forms">
+              <!--The lable element is for showing a caption for an item in a user interface and it is followed by "for" attribute
+                to show what the lable is for. The input elemet suggests what data to fill in --> 
             <P>
                 <lable for="first name">First Name</lable>
                 <input id="first name" type="text" placeholder="First Name" name="first name">
@@ -26,6 +29,9 @@
     </section>
 
     <section>
+            <!--Here we used a combo box to give a particular options with a lable to choose from food options and we bind it with 
+        ID to associate the drop-down list with a label -->
+
             <p>
                 <lable for="food choices">Which food would you like to eat?</lable>
 
@@ -41,6 +47,8 @@
     </section>
 
     <section>
+        <!-- Here we created this are to allow useres to type their allergies, we used a textarea element tag
+    with attributes setting the width and height with rows and columns -->
             <p>
                 <lable for="allergies">Do you have any allergies?</lable>
                 <textarea id="allergies" name="allergies" rows="5" cols="10" placeholder="Write your allergies"></textarea>
