@@ -13,19 +13,21 @@
     <section>
         <h1>Username and Password</h1>
             <form action="/forms">
-
+                <!--The lable element is for showing a caption for an item in a user interface and it is followed by "for" attribute
+                     to show what the lable is for.
+                    The input elemet suggests what data to fill in --> 
                 <P>
                     <lable for="username">Enter A Name</lable>
                     <input id="username" type="text" placeholder="username" name="username">
 
                 </P>
-               
+                <!-- We used the same lable element as above  -->
                 <P>
                     <lable for="username">Enter A Pasword</lable>
                     <input id="username" type="password" placeholder="Password" name="Password">
 
                 </P>
-                <!--   -->
+                <!-- The button element performs a programmable action, such as submitting a form or opening a dialog  -->
                 <button>Submit Button></button>
 
             </form>
@@ -34,23 +36,22 @@
     <hr>
      <!-- This is where i put the search engines where you can type in and it will take you to the website   -->
     <section>
-        <!--     -->
+        <!-- Here we are puting  header using the "h" tags   -->
             <h1>Query Strings</h1>
-        <!--     -->
+        <!--  Here the next three form action allows us to linc to a server and the input element will help  to create interactive controls
+             for web-based forms in order to accept data from the user   -->
                 <form action="https://www.reddit.com/search/">
 
                     <input type="text" name="question">
                     <button>Submit Reddit</button>
 
                 </form>
-        <!--    -->
                 <form action="https://www.youtube.com/results?search_query=">
 
                     <input type="text" name="q">
                     <button>Submit Youtube</button>
 
                 </form>
-        <!--   -->
                 
                 <form action="https://www.google.com/search">
                     <input type="text" name="q">
@@ -65,11 +66,12 @@
     <section>
         <h1>Radio Buttons and Checkbox</h1>
             <form action="birds">
-     <!-- This is a checkbox with a binding lable -->
+     <!-- This is where we put a checkbox where it is used to let a user select one or more options of a limited number of choices
+         with a binding lable element to creat a caption -->
                 <lable for="agree">I agree to everything</lable>
                 <input type="checkbox" name="agree_tos" id="agree">
 
-    <!--   -->
+    <!-- Here we used collection of radio buttons describing a set of related options) -->
 
                 <p>
                     <lable for="s">Small</lable>
@@ -83,12 +85,13 @@
 
                 </p>
 
-     <!--   -->
+     <!--Here we used a combo box to give a particular options with a lable to choose a favorite color and we bind it with 
+        ID to associate the drop-down list with a label -->
                 <p>
                     <lable for="favColor">What is your favorite color</lable>
 
                     <select name="favorite" id="favcolor">
-
+                        <option value="Default">Default Option</option>
                         <option value="Red">Red</option>
 
                         <option value="Green">Green</option>
@@ -99,7 +102,8 @@
 
                 </p>
 
-     <!--    -->
+     <!--Here we created a scroll bar and chose a range type, it suggestes the users to choose a specific amount of things from the range
+    Used in conjunction with min and max to define the range of acceptable values-->
 
                 <p> 
 
@@ -107,28 +111,27 @@
                     <input type="range" id="scroll" min="5" max="10" name="scrollbar">
 
                 </p>
-    <!--   -->
+    <!-- We created this are to allow useres to type a text, we used a textarea element tag
+    with attributes setting the width and height with rows and columns -->
                 <p>
                     <lable for="requests">Type Into This Box</lable>
                     <textarea id="requests" name="reqs" rows="20" cols="20" placeholder="Type something Here"></textarea>
 
-
                 </p>
-
 
                 <button>Submit Button</button>
             </form>
     </section>
     <hr>
-
+    <!--Here we created a form validation-->
     <section>
         <h2>Form Validation</h2>
         <form action="/bananas">
-            <!---->
+            <!--Here we put the required attribute to alerts a message if it is left unfilled to prevent the form from being submitted-->
             <lable for="required1"></lable>
             <input type="text" name="tigray" id="required1" required>
 
-            <!---->
+            <!-- Here we set the amount of words that should be put in a box with min and max-->
             <lable for="length"></lable>
             <input type="text" name="lengthy" id="length" minlemgth="5" maxlength="10">
 
@@ -138,12 +141,8 @@
 
             </p>
             <button>Submit</button>
-
-
         </form>
-
-
-    </section>
+     </section>
 
 
 
