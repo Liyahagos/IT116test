@@ -1,0 +1,39 @@
+/*  */
+/* *   {
+    color:pink;
+    background-color:green;
+} */
+
+/*  */
+body {
+
+    background-color: gray;
+}
+/*  */
+button {
+    font-size:35px;
+}
+
+/*  */
+h1, h2 {
+
+    color:brown; 
+}
+
+/*  */
+#signup {
+
+    background-color: yellow;
+    color:red; 
+}
+/*  */
+.sec{
+
+    color:green;
+}
+
+/*  */
+.post a {
+
+    color:plum;
+}
