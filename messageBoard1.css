@@ -4,36 +4,83 @@
     background-color:green;
 } */
 
-/*  */
+/* Here we are calling using a specific group in this example its the body */
 body {
 
     background-color: gray;
 }
-/*  */
+/* Here we are sellecting the buttons to change their font size   */
 button {
     font-size:35px;
 }
 
-/*  */
+/* Here we are calling multiple element using element selectors  */
 h1, h2 {
 
     color:brown; 
 }
 
-/*  */
+/* Here we are linkink using ID selector  */
 #signup {
 
     background-color: yellow;
     color:red; 
 }
-/*  */
+/* Here we are using class selector followed by the name of the class */
 .sec{
 
     color:green;
 }
 
-/*  */
+/* Here desendent selector is assignd to call the class */
 .post a {
 
-    color:plum;
+    color:plum;    
+}
+
+/* Here we are using desentent selector using the actual selector  */
+footer > a{
+
+    color: crimson;
+}
+
+/* Here we are linking by calling it using the type  */
+input[type="password"]{
+
+    color:purple;
+
+}
+
+input[type="text"]{
+
+    color:red; 
+}
+
+/*Here we are calling using the attribut selector  */
+a[href*="google"]{
+    color:darkorange;
+
+}
+/*Here we are using pseudo-class a keyword added to a selector that specifies a special state of the selected element(s)  */
+button:hover {
+
+    background-color:red;
+    color:aquamarine;
+}
+/* Here we are making the button change colors when clicked on  */
+.post button:active {
+
+    background-color:green;
+}
+/* pseuedo selector helps us calle specific elements from the html */
+h2::first-letter {
+
+font-size:40px;
+
+}
+
+/*Here pseuedo selectore will only select the first sentences of the paragraph*/
+p::first-line {
+
+    color: yellow;
 }
